@@ -5,3 +5,10 @@ short_description:
   type: str
   default: Test Project
 _subdirectory: template
+_tasks:
+    - [
+    "{{ _copier_python }}", # which python
+    "{{ _copier_conf.src_path }}{{ _copier_conf.sep }}_tasks.py", # task script
+    # keyword arguments for python script
+    # etc.
+    ]
